@@ -16,7 +16,7 @@ namespace DataStructures
         {
             //fancy conversion code
             int hash = key * 1;
-            return hash;
+            return hash /*% tablesize // can mod tablesize, I did not use to save space*/;
         }
 
         public int hashfunc2(int key)
